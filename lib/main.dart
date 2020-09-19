@@ -15,6 +15,7 @@ import 'package:pounce_project/user_profile.dart';
 import 'shelter_map.dart';
 import 'hearted.dart';
 import 'button_to_profile.dart';
+import 'pounce_page.dart';
 
 void main() => runApp(MyApp());
 
@@ -45,10 +46,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
   static List<Widget> _widgetOptions = <Widget>[
     User_Profile (
     ),
-    Text(
-      'Index 1: Swipe',
-      style: optionStyle,
-    ),
+    Pounce(),
     Text(
       'Index 2: Home',
       style: optionStyle,
