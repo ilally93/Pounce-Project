@@ -53,7 +53,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
       style: optionStyle,
     ),
     Hearted(),
-    Button_to_Profile(),
+
     Shelter_Map(),
   ];
 
