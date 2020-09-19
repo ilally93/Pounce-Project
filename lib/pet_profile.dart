@@ -52,11 +52,6 @@ class _Pet_ProfileState extends State<Pet_Profile> {
             ],
           ),
         ),
-          Container(
-            child: Image(
-              Image.file("assets/pets/Dory.jpg"), image: "assets/pets/",
-            ),
-          ),
         ],
       ),
     );
