@@ -70,6 +70,7 @@ flutter:
     - assets/pets/013.png
     - assets/pets/014.png
     - assets/pets/Dory.jpg
+    - assets/profile_pics/cole.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

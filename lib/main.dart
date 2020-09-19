@@ -9,11 +9,16 @@
 // ![A scaffold with a bottom navigation bar containing three bottom navigation
 // bar items. The first one is selected.](https://flutter.github.io/assets-for-api-docs/assets/material/bottom_navigation_bar.png)
 
+//TODO Rename pet images with real pet names
+//TODO Associate pet object list with Hearted page
+
 import 'package:flutter/material.dart';
 import 'package:pounce_project/pet_profile.dart';
+import 'package:pounce_project/user_profile.dart';
 import 'shelter_map.dart';
 import 'hearted.dart';
 import 'button_to_profile.dart';
+import 'pounce_page.dart';
 
 void main() => runApp(MyApp());
 
@@ -42,12 +47,9 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
   static const TextStyle optionStyle =
   TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
   static List<Widget> _widgetOptions = <Widget>[
-    Pet_Profile (
+    User_Profile (
     ),
-    Text(
-      'Index 1: Swipe',
-      style: optionStyle,
-    ),
+    Pounce(),
     Text(
       'Index 2: Home',
       style: optionStyle,
