@@ -10,8 +10,10 @@
 // bar items. The first one is selected.](https://flutter.github.io/assets-for-api-docs/assets/material/bottom_navigation_bar.png)
 
 import 'package:flutter/material.dart';
+import 'package:pounce_project/pet_profile.dart';
 import 'shelter_map.dart';
 import 'hearted.dart';
+import 'button_to_profile.dart';
 
 void main() => runApp(MyApp());
 
@@ -40,9 +42,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
   static const TextStyle optionStyle =
   TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
   static List<Widget> _widgetOptions = <Widget>[
-    Text (
-      'Index 0: Profile',
-      style: optionStyle,
+    Pet_Profile (
     ),
     Text(
       'Index 1: Swipe',
@@ -53,6 +53,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
       style: optionStyle,
     ),
     Hearted(),
+    Button_to_Profile(),
     Shelter_Map(),
   ];
 
