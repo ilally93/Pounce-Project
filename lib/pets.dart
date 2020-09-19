@@ -11,7 +11,7 @@ class Pet {
   String dealBreakers;
   bool hearted;
 
-  Pet({ this.name, this.age, this.species, this.breed, this.shelterLocation, this.likes, this.dislikes, this.dealBreakers, this.hearted=false });
+Pet({ this.name, this.age, this.species, this.breed, this.shelterLocation, this.likes, this.dislikes, this.dealBreakers, this.hearted=false });
 }
 
 List<Pet> pets = [
