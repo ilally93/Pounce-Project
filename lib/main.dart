@@ -9,6 +9,9 @@
 // ![A scaffold with a bottom navigation bar containing three bottom navigation
 // bar items. The first one is selected.](https://flutter.github.io/assets-for-api-docs/assets/material/bottom_navigation_bar.png)
 
+//TODO Rename pet images with real pet names
+//TODO Associate pet object list with Hearted page
+
 import 'package:flutter/material.dart';
 import 'package:pounce_project/pet_profile.dart';
 import 'shelter_map.dart';
