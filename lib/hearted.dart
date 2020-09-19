@@ -11,27 +11,41 @@ class HeartedState extends State<Hearted> {
   Widget build(BuildContext context) {
     return Scaffold(
       body:
-          Row(
-           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-           children: [
-            Image(
-              image: AssetImage('assets/icon-color.png'),
-              height: 75,
-              width: 75,
-            ),
-            Text("Mary"),
+          Column(
+            children: [
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  Image(
+                    image: AssetImage('assets/icon-color.png'),
+                    height: 75,
+                    width: 75,
+                  ),
+                  Text("Mary"),
 
-             IconButton(
-               icon: Icon(Icons.delete),
-               tooltip: 'Remove this pet from your list',
-               onPressed: () {
+                  IconButton(
+                    icon: Icon(Icons.account_circle),
+                    tooltip: 'View pet profile',
+                    onPressed: () {
 
-               },
-             )
+                    },
+                  ),
+
+                  IconButton(
+                    icon: Icon(Icons.delete),
+                    tooltip: 'Remove this pet from your list',
+                    onPressed: () {
+
+                    },
+                  ),
+                ],
+              ),
+            ]
+
+          )
 
 
-          ],
-        ),
+
         );
   }
 }
