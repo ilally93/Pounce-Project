@@ -1,6 +1,7 @@
+import 'dart:io';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:dotenv/dotenv.dart';
 import 'package:echoar_package/echoar_package.dart';
 
 class  Pet_Profile extends StatefulWidget {
@@ -47,14 +48,37 @@ class _Pet_ProfileState extends State<Pet_Profile> {
                   ),
                   Text(
                     ", 1", //AGE
-                    style: TextStyle(fontSize: 40),
+                    style: TextStyle(fontSize: 70),
                   ),
             ],
           ),
         ),
           Container(
+            color: Colors.blueGrey[100],
+            padding: EdgeInsets.all(10),
             child: Image(
-              Image.file("assets/pets/Dory.jpg"), image: "assets/pets/",
+              image: AssetImage('assets/pets/Dory.jpg'), //IMAGE
+              height: 375,
+              width:375,
+            ),
+          ),
+          Container(
+            child: Text(
+              "Likes: ", //LIKES
+              style: TextStyle(fontSize: 20),
+            ),
+          ),
+          Container(
+            child: Text(
+              "Dislikes: ", //DISLIKES
+              style: TextStyle(fontSize: 20),
+            ),
+          ),
+          Container(
+            child: Text(
+              "Deal Breakers: ", //DEAL BREAKERS
+              style: TextStyle(fontSize: 20),
+
             ),
           ),
         ],
