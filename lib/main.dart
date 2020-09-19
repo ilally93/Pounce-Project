@@ -12,6 +12,7 @@
 import 'package:flutter/material.dart';
 import 'package:pounce_project/pet_profile.dart';
 import 'shelter_map.dart';
+import 'hearted.dart';
 
 
 void main() => runApp(MyApp());
@@ -51,10 +52,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
       'Index 2: Home',
       style: optionStyle,
     ),
-    Text(
-      'Index 3: Hearted',
-      style: optionStyle,
-    ),
+    Hearted(),
     Shelter_Map(),
   ];
 
@@ -63,7 +61,6 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
       _selectedIndex = index;
     });
   }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
