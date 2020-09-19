@@ -11,6 +11,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:pounce_project/pet_profile.dart';
+import 'package:pounce_project/user_profile.dart';
 import 'shelter_map.dart';
 import 'hearted.dart';
 import 'button_to_profile.dart';
@@ -42,7 +43,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
   static const TextStyle optionStyle =
   TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
   static List<Widget> _widgetOptions = <Widget>[
-    Pet_Profile (
+    User_Profile (
     ),
     Text(
       'Index 1: Swipe',
