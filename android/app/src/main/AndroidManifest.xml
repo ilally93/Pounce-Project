@@ -9,6 +9,11 @@
         android:name="io.flutter.app.FlutterApplication"
         android:label="pounce_project"
         android:icon="@mipmap/ic_launcher">
+
+        <!-- This may or may not work for key?-->
+        <meta-data android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDHIutI1jBi5UcKcNLGEIYm5WisTqcUXp8"/>
+
         <activity
             android:name=".MainActivity"
             android:launchMode="singleTop"
