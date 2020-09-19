@@ -1,5 +1,6 @@
 import 'dart:io';
-
+import 'package:pounce_project/pets.dart';
+import 'package:url_launcher/url_launcher.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:echoar_package/echoar_package.dart';
@@ -11,6 +12,7 @@ class  Pet_Profile extends StatefulWidget {
 
 class _Pet_ProfileState extends State<Pet_Profile> {
   @override
+  String url = 'https://www.charlestonanimalsociety.org/';
   Widget build(BuildContext context) {
 //EchoAR echo = EchoAR(apiKey: "<Key>");
     return Scaffold(
@@ -63,28 +65,69 @@ class _Pet_ProfileState extends State<Pet_Profile> {
             ),
           ),
           Container(
-            child: Text(
-              "Likes: ", //LIKES
-              style: TextStyle(fontSize: 20),
+            padding: EdgeInsets.all(0),
+            child: Row(
+                children: <Widget>[
+                  Text(
+                    "Location: Charleston Animal Society", //Shelter
+                    style: TextStyle(fontSize: 15),
+                  ),
+                ]
             ),
           ),
           Container(
-            child: Text(
-              "Dislikes: ", //DISLIKES
-              style: TextStyle(fontSize: 20),
+            padding: EdgeInsets.all(10),
+            child: Row(
+              children: <Widget>[
+                Text(
+                  "Likes: Treats, Cuddles, and Toys on Strings", //LIKES
+                  style: TextStyle(fontSize: 20),
+                ),
+              ]
+            )
+          ),
+          Container(
+            padding: EdgeInsets.all(10),
+            child: Row(
+              children: <Widget>[
+                Text(
+                  "Dislikes: Vacuum Cleaners", //DISLIKES
+                  style: TextStyle(fontSize: 20),
+                ),
+              ]
             ),
           ),
           Container(
-            child: Text(
-              "Deal Breakers: ", //DEAL BREAKERS
-              style: TextStyle(fontSize: 20),
-
-            ),
+            padding: EdgeInsets.all(10),
+            child: Row(
+              children: <Widget>[
+                Text(
+                "Deal Breakers: Children", //DEAL BREAKERS
+                style: TextStyle(color: Colors.red, fontSize: 20),
+                ),
+            ]
+          ),
+          ),
+          Container(
+            padding: EdgeInsets.fromLTRB(0, 15, 0, 0),
+            child: ButtonTheme(
+              height: 55,
+              minWidth: 200,
+              child: FlatButton(
+                  child: Text(
+                    "ADOPT ME!",
+                    style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold, color: Colors.deepPurpleAccent),
+                  ),
+                  color: Colors.tealAccent,
+                  onPressed: (){
+                    launch(Uri.encodeFull(url));
+                  },
+              ),
+            )
           ),
         ],
       ),
     );
   }
 }
-
 
