@@ -69,7 +69,7 @@ class _Pet_ProfileState extends State<Pet_Profile> {
             child: Row(
                 children: <Widget>[
                   Text(
-                    "Location: ", //Shelter
+                    "Location: Charleston Animal Society", //Shelter
                     style: TextStyle(fontSize: 15),
                   ),
                 ]
@@ -80,7 +80,7 @@ class _Pet_ProfileState extends State<Pet_Profile> {
             child: Row(
               children: <Widget>[
                 Text(
-                  "Likes: ", //LIKES
+                  "Likes: Treats, Cuddles, and Toys on Strings", //LIKES
                   style: TextStyle(fontSize: 20),
                 ),
               ]
@@ -91,7 +91,7 @@ class _Pet_ProfileState extends State<Pet_Profile> {
             child: Row(
               children: <Widget>[
                 Text(
-                  "Dislikes: ", //DISLIKES
+                  "Dislikes: Vacuum Cleaners", //DISLIKES
                   style: TextStyle(fontSize: 20),
                 ),
               ]
@@ -102,8 +102,8 @@ class _Pet_ProfileState extends State<Pet_Profile> {
             child: Row(
               children: <Widget>[
                 Text(
-                "Deal Breakers: ", //DEAL BREAKERS
-                style: TextStyle(color: Colors.orange, fontSize: 20),
+                "Deal Breakers: Children", //DEAL BREAKERS
+                style: TextStyle(color: Colors.red, fontSize: 20),
                 ),
             ]
           ),
