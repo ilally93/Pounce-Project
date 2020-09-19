@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:dotenv/dotenv.dart';
+//import 'package:dotenv/dotenv.dart';
 import 'package:pounce_project/backend/users/dummy_user.dart';
 import 'package:pounce_project/backend/users/profile.dart';
 
