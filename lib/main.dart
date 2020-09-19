@@ -11,7 +11,7 @@
 
 import 'package:flutter/material.dart';
 import 'shelter_map.dart';
-
+import 'button_to_profile.dart';
 
 void main() => runApp(MyApp());
 
@@ -52,10 +52,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
       'Index 2: Home',
       style: optionStyle,
     ),
-    Text(
-      'Index 3: Hearted',
-      style: optionStyle,
-    ),
+    Button_to_Profile(),
     Shelter_Map(),
   ];
 
