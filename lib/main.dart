@@ -10,6 +10,7 @@
 // bar items. The first one is selected.](https://flutter.github.io/assets-for-api-docs/assets/material/bottom_navigation_bar.png)
 
 import 'package:flutter/material.dart';
+import 'shelter_map.dart';
 
 void main() => runApp(MyApp());
 
@@ -37,8 +38,8 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
   int _selectedIndex = 0;
   static const TextStyle optionStyle =
   TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
-  static const List<Widget> _widgetOptions = <Widget>[
-    Text(
+  static List<Widget> _widgetOptions = <Widget>[
+    Text (
       'Index 0: Profile',
       style: optionStyle,
     ),
@@ -54,10 +55,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
       'Index 3: Hearted',
       style: optionStyle,
     ),
-    Text(
-      'Index 4: Shelters',
-      style: optionStyle,
-    ),
+    Shelter_Map(),
   ];
 
   void _onItemTapped(int index) {
