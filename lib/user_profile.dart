@@ -30,14 +30,35 @@ class _User_ProfileState extends State<User_Profile> {
       body: SingleChildScrollView (
         child: Column (
           children: [
-            Container(
-              child: Image(
-                  image: dummyProfile.getProfPic(),
-                  height: 200,
-                  width: 200,
+            Row(
+              children: [
+                Container(
+                  child: Image(
+                    image: dummyProfile.getProfPic(),
+                      height: 200,
+                      width: 200,
+                    ),
+                  alignment: Alignment.topLeft,
+                  padding: EdgeInsets.fromLTRB(10,10,10,10),
                 ),
-              alignment: Alignment.topLeft,
-              padding: EdgeInsets.fromLTRB(10,10,10,10),
+                Container(
+                  child: Column(
+                    children: [
+                      Text(
+                        dummyProfile.getName(),
+                        style: DefaultTextStyle.of(context).style.apply(fontSizeFactor: 1.8),
+                      ),
+                      Text(
+                        dummyProfile.getAge().toString(),
+                        style: DefaultTextStyle.of(context).style.apply(fontSizeFactor: 1.4),
+                      ),
+                    ],
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                  ),
+                  alignment: Alignment.topLeft,
+                  padding: EdgeInsets.fromLTRB(10,10,10,10),
+                )
+              ]
             ),
             Container(
               child: Text(
