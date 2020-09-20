@@ -14,3 +14,5 @@ Profile createDummyUser() {
 
   return dummyProfile;
 }
+
+final dummyProfile = createDummyUser();
