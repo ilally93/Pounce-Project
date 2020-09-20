@@ -30,56 +30,98 @@ class _User_ProfileState extends State<User_Profile> {
       body: SingleChildScrollView (
         child: Column (
           children: [
-            Row(
-              children: [
-                Image(
+            Container(
+              child: Image(
                   image: dummyProfile.getProfPic(),
                   height: 200,
                   width: 200,
                 ),
-              ]
+              alignment: Alignment.topLeft,
+              padding: EdgeInsets.fromLTRB(10,10,10,10),
             ),
-            Text(
-              dummyProfile.getAbout(),
+            Container(
+              child: Text(
+                dummyProfile.getAbout(),
+                style: DefaultTextStyle.of(context).style.apply(fontSizeFactor: 1.3),
+              ),
+              alignment: Alignment.topLeft,
+              padding: EdgeInsets.fromLTRB(20,20,20,40),
+              color: Color(0xfff0f0f0),
             ),
-            Text(
-              "Likes..."
+            Container(
+              child: Text(
+                "Likes...",
+                style: DefaultTextStyle.of(context).style.apply(fontSizeFactor: 1.4),
+              ),
+              padding: EdgeInsets.fromLTRB(0, 20, 0, 10),
             ),
             ListView.builder(
               scrollDirection: Axis.vertical,
               shrinkWrap: true,
               itemCount: dummyProfile.getLikes().length,
               itemBuilder: (context, index) {
-                return ListTile(
-                  title: Text(dummyProfile.getLikes()[index]),
+                return Container(
+                  padding: EdgeInsets.fromLTRB(20,3,0,3),
+                  child: Text(
+                    dummyProfile.getLikes()[index],
+                    style: DefaultTextStyle.of(context).style.apply(fontSizeFactor: 1.3),
+                  ),
+                  decoration: BoxDecoration(
+                    color: Color(0xffe8e8e8),
+                  ),
                 );
               }
             ),
-            Text(
-              "Dislikes..."
+            Container(
+              child: Text(
+                "Dislikes...",
+                style: DefaultTextStyle.of(context).style.apply(fontSizeFactor: 1.4),
+              ),
+              padding: EdgeInsets.fromLTRB(0, 20, 0, 10),
             ),
             ListView.builder(
               scrollDirection: Axis.vertical,
               shrinkWrap: true,
               itemCount: dummyProfile.getDislikes().length,
               itemBuilder: (context, index) {
-                return ListTile(
-                  title: Text(dummyProfile.getDislikes()[index]),
+                return Container(
+                  padding: EdgeInsets.fromLTRB(20,3,0,3),
+                  child: Text(
+                    dummyProfile.getDislikes()[index],
+                    style: DefaultTextStyle.of(context).style.apply(fontSizeFactor: 1.3),
+                  ),
+                  decoration: BoxDecoration(
+                    color: Color(0xffe8e8e8),
+                  ),
                 );
               }
             ),
-            Text(
-              "Deal breakers..."
+            Container(
+              child: Text(
+                "Deal breakers...",
+                style: DefaultTextStyle.of(context).style.apply(fontSizeFactor: 1.4),
+              ),
+              padding: EdgeInsets.fromLTRB(0, 20, 0, 10),
             ),
             ListView.builder(
               scrollDirection: Axis.vertical,
               shrinkWrap: true,
               itemCount: dummyProfile.getDealBreakers().length,
               itemBuilder: (context, index) {
-                return ListTile(
-                  title: Text(dummyProfile.getDealBreakers()[index]),
+                return Container(
+                  padding: EdgeInsets.fromLTRB(20,3,0,3),
+                  child: Text(
+                     dummyProfile.getDealBreakers()[index],
+                    style: DefaultTextStyle.of(context).style.apply(fontSizeFactor: 1.3),
+                  ),
+                  decoration: BoxDecoration(
+                    color: Color(0xffe8e8e8),
+                  ),
                 );
               }
+            ),
+            Container(
+              padding: EdgeInsets.fromLTRB(0, 20, 0, 0),
             ),
           ]
         )
