@@ -20,23 +20,33 @@ class _PounceState extends State<Pounce> {
   List<Pet> pets = [
     Pet(name: 'Dory', age: '1', species: 'Cat', breed: '', hearted: false),
     Pet(name: 'Earl', age: '1', species: 'Cat', breed: '', hearted: false),
-    //Pet(name: 'Siri', age: '1', species: 'Cat', breed: '', hearted: false),
-    //Pet(name: 'Carl', age: '1', species: 'Dog', breed: 'Corgi mix', hearted: false),
+    Pet(name: 'Siri', age: '1', species: 'Cat', breed: '', hearted: false),
+    Pet(name: 'Carl', age: '1', species: 'Dog', breed: 'Corgi mix', hearted: false),
   ];
 
-  List<String> petNames = [
-    'Dory',
-    'Earl',
-    //'Siri',
-    //'Carl',
-  ];
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: Colors.deepPurple[200],
+      body: Container(
+            child: PetCard(pet: pets[1]),
+      )
+    );
+  }
+}
 
-  Widget petCard(pet) {
+class PetCard extends StatelessWidget {
+
+  final Pet pet;
+  PetCard({ this.pet });
+
+  @override
+  Widget build(BuildContext context) {
     return Card(
         color: Colors.grey[300],
         margin: EdgeInsets.fromLTRB(16.0, 20.0, 16.0, 0.0),
         child: Padding(
-          padding: const EdgeInsets.all(12.0),
+          padding: const EdgeInsets.all(10.0),
           child: Column(
             children: <Widget>[
               Text(
@@ -79,21 +89,4 @@ class _PounceState extends State<Pounce> {
         )
       );
   }
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Colors.deepPurple[200],
-      body: Container(
-        child: Column(
-          children: <Widget> [
-            petCard('Dory')
-          ]
-        ),
-
-
-      )
-    );
-  }
-
 }
