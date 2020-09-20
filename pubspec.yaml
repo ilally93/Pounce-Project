@@ -1,3 +1,4 @@
+
 name: pounce_project
 description: An app to get shelter pets adopted
 
@@ -55,20 +56,20 @@ flutter:
     - assets/icon-color.png
     - assets/treatment-clear.png
     - assets/treatment-color.png
-    - assets/pets/Pebbles.png
-    - assets/pets/Honey.png
-    - assets/pets/Tuki.png
     - assets/pets/Bear.png
-    - assets/pets/Rico.png
-    - assets/pets/Siri.png
-    - assets/pets/Inky.png
-    - assets/pets/Fluff.png
-    - assets/pets/Earl.png
     - assets/pets/Carl.png
     - assets/pets/Carly.png
-    - assets/pets/Pepper.png
     - assets/pets/Cloudy.png
     - assets/pets/Dory.png
+    - assets/pets/Earl.png
+    - assets/pets/Fluff.png
+    - assets/pets/Honey.png
+    - assets/pets/Inky.png
+    - assets/pets/Pebbles.png
+    - assets/pets/Pepper.png
+    - assets/pets/Rico.png
+    - assets/pets/Siri.png
+    - assets/pets/Tuki.png
     - assets/profile_pics/cole.png
 
   # An image asset can refer to one or more resolution-specific "variants", see

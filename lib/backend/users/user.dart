@@ -1,13 +1,11 @@
 // I just made this while learning Dart. It has no functional reason for existing.
 abstract class User {
   int userID;
-  String username;
   String email;
   String passHash;
   bool loginState = false;
 
-  User(String name, String email, String password) {
-    this.username = name;
+  User(String email, String password) {
     this.email = email;
     this.passHash = checksum(password);
   }
@@ -26,17 +24,16 @@ abstract class User {
     this.loginState = false;
   }
 
-  String getUsername() => this.username;
   String getEmail() => this.email;
 }
 
 class NormalUser extends User {
-  NormalUser(String name, String email, String password): super(name, email, password);
+  NormalUser(String email, String password): super(email, password);
 
 }
 
 class ShelterUser extends User {
-  ShelterUser(String name, String email, String password): super(name, email, password);
+  ShelterUser(String email, String password): super(email, password);
 
 }
 
