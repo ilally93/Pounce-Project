@@ -12,6 +12,10 @@ class _PounceState extends State<Pounce> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Image.asset('assets/icon-clear.png'),
+        backgroundColor: Colors.deepPurpleAccent,
+      ),
       backgroundColor: Colors.deepPurple[200],
       body: Container(
         child: PetCard(pet: petList[4]),

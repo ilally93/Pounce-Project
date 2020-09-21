@@ -3,7 +3,7 @@ import 'package:pounce_project/backend/users/profile.dart';
 
 Profile createDummyUser() {
   Profile dummyProfile = new Profile("this", "that");
-  dummyProfile.setName("Cole Westbrook");
+  dummyProfile.setName("Cole West");
   dummyProfile.setAge(19);
   dummyProfile.setImage(new AssetImage("assets/profile_pics/cole.png"));
   dummyProfile.setAbout(
